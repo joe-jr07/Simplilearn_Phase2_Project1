@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Class Portal</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	h1{
+		font-size: 26px;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-style: italic;
+		color: #1098ad;
+		background-color: #f7f7f7;
+		text-align: center;
+		padding: 20px;
+		margin-bottom: 100px;
+		
+	}
+	.container{
+		width: 700px;
+		margin: 0 auto;
+	}
+	form{
+		background-color: #f7f7f7;
+		border-top: 5px solid #1098ad;
+		border-bottom: 5px solid #1098ad;
+		width: 350px;
+		padding: 50px;
+		margin: 0 auto;
+	}
+	label{
+		font-size: 18px;
+		font-family: sans-serif;
+		color: #444;	
+	}
+	.button{
+		background-color: black;
+		border: none;
+		color: white;
+		font-size: 16px;
+		text-transform: uppercase;
+		cursor: pointer;
+		border: 3px solid white;
+		padding: 15px;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.input{
+		padding: 5px;
+	}
+	a:link{
+		display: block;
+		font-size: 18px;
+		font-family: sans-serif;
+		color: #1098ad;
+		margin-top:20px;
+		margin-left: 130px;
+	}
+	a:link,a:visited{
+		color: #1098ad;
+		text-decoration: none;
+	}
+	a:hover,a:active{
+		color: orangered;
+		font-weight: bold;
+		text-decoration: underline orangered; 
+	}
+</style>
+</head>
+<body>
+	<div class=container>
+	<h1>Add Classes</h1>
+	<form action="AddClassServlet" method="post">
+		<label>Add Class Name:</label>
+		<input type="text" name="classname" placeholder="enter class name" required="required" class="input">
+		<input type="submit" value="add" class="button">
+		<a href="home.html">Go Back</a>
+	</form>
+	</div>
+	
+</body>
+</html>
